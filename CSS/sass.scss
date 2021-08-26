@@ -1,0 +1,84 @@
+@mixin flexCentre($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+.container {
+  //Header
+  background: linear-gradient(to left, #ff512f, #dd2476);
+  // animation: changeBg 5s linear infinite;
+  // @keyframes changeBg {
+  //     to{
+  //         filter: hue-rotate(360deg);//This effect Image file also!!!
+  //     }
+  // }
+  height: 100vh;
+  header {
+    @include flexCentre(row);
+    .logo {
+      padding-top: 2rem;
+      img {
+        height: 100px;
+        width: 100px;
+        box-shadow: 7px 7px 5px black;
+      }
+    }
+  }
+  //Message
+  .message {
+    @include flexCentre(column);
+    .show {
+      height: 400px;
+      width: 900px;
+      //   background-color: red;
+      padding: 3rem;
+      .you {
+        width: 200px;
+        height: 30px;
+        font-size: 1.4rem;
+        background-color: rgb(134, 117, 117);
+        float: right;
+        clear: both;
+        padding: 1rem 1rem 3rem 1rem;
+        text-align: center;
+        box-shadow: 7px 7px 5px black;
+      }
+      .others {
+        width: 200px;
+        height: 30px;
+        font-size: 1.4rem;
+        background-color: rgb(134, 117, 117);
+        float: left;
+        clear: both;
+        padding: 1rem 1rem 3rem 1rem;
+        box-shadow: 7px 7px 5px black;
+        text-align: center;
+      }
+    }
+    .type {
+      height: 35px;
+      width: 900px;
+      // background-color: blue;
+      @include flexCentre(row);
+      input {
+        // display: block;
+        font-size: 2rem;
+        height: 100%;
+        width: 90%;
+        outline: none;
+      }
+      button {
+        height: 100%;
+        width: 10%;
+      }
+    }
+  }
+}

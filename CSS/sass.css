@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  background: -webkit-gradient(linear, right top, left top, from(#ff512f), to(#dd2476));
+  background: linear-gradient(to left, #ff512f, #dd2476);
+  height: 100vh;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container header .logo {
+  padding-top: 2rem;
+}
+
+.container header .logo img {
+  height: 100px;
+  width: 100px;
+  -webkit-box-shadow: 7px 7px 5px black;
+          box-shadow: 7px 7px 5px black;
+}
+
+.container .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .message .show {
+  height: 400px;
+  width: 900px;
+  padding: 3rem;
+}
+
+.container .message .show .you {
+  width: 200px;
+  height: 30px;
+  font-size: 1.4rem;
+  background-color: #867575;
+  float: right;
+  clear: both;
+  padding: 1rem 1rem 3rem 1rem;
+  text-align: center;
+  -webkit-box-shadow: 7px 7px 5px black;
+          box-shadow: 7px 7px 5px black;
+}
+
+.container .message .show .others {
+  width: 200px;
+  height: 30px;
+  font-size: 1.4rem;
+  background-color: #867575;
+  float: left;
+  clear: both;
+  padding: 1rem 1rem 3rem 1rem;
+  -webkit-box-shadow: 7px 7px 5px black;
+          box-shadow: 7px 7px 5px black;
+  text-align: center;
+}
+
+.container .message .type {
+  height: 35px;
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .message .type input {
+  font-size: 2rem;
+  height: 100%;
+  width: 90%;
+  outline: none;
+}
+
+.container .message .type button {
+  height: 100%;
+  width: 10%;
+}
+/*# sourceMappingURL=sass.css.map */
